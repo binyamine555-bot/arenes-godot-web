@@ -113,7 +113,7 @@ body {
 // Hébergement : le moteur (index.wasm) et les données (index.pck) sont envoyés compressés (.gz) et découpés
 // en morceaux de 8 Mo ; ils sont recollés et décompressés ici, dans le navigateur.
 (function(){
-  var PARTS = {"index.pck": 30, "index.wasm": 11};
+  var PARTS = {"index.pck": 34, "index.wasm": 11};
   var f0 = window.fetch.bind(window);
   window.fetch = function(input, init){
     var u = (typeof input === 'string') ? input : (input && input.url) || '';
@@ -141,7 +141,7 @@ body {
 </script>
 <script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":25721404,"index.wasm":38047590},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":true,"fileSizes":{"index.pck":29671948,"index.wasm":38047590},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
